@@ -2,13 +2,17 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let HandyManSchema = Schema({
+    id: Number,
     name: String,
     avatarUrl: String,
     aboutMe: String,
-    phone: String,
+    phoneNumber: String,
     address: String,
-    isFavorite: Boolean,
-    webSite: String
+    favorite: Boolean,
+    webSite: String,
+    photoUrl: String,
+    bio: String,
+    likes: Number,
 });
 
 // C'est à travers ce modèle Mongoose qu'on pourra faire le CRUD

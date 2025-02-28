@@ -32,6 +32,9 @@ function create(req, res) {
     handyman.address = req.body.address;
     handyman.isFavorite = req.body.isFavorite;
     handyman.webSite = req.body.webSite;
+    handyman.photoUrl = req.body.photoUrl;
+    handyman.bio = req.body.bio;
+    handyman.likes = req.body.likes;
 
     console.log(handyman)
 
